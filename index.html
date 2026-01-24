@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVACOM ENTREPRISE — Agence de communication globale</title>
+
+  <style>
+    :root{
+      --blue:#005283;
+      --orange:#FB8B3E;
+      --white:#FFFFFF;
+      --dark:#0a1a22;
+      --muted:#5e7b89;
+      --bg:#f4f8fa;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:Inter,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
+    img{max-width:100%;display:block}
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:30px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .logo img{
+      width:70px;
+      height:70px;
+      object-fit:contain;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    nav a{
+      color:var(--blue);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    nav a:hover{
+      color:var(--orange);
+    }
+
+    .btn-primary{
+      background:var(--orange);
+      color:white;
+      padding:10px 16px;
+      border-radius:10px;
+      font-weight:700;
+      display:inline-block;
+      text-align:center;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+      margin-bottom:20px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+
+    footer{
+      margin-top:40px;
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- HEADER + MENU -->
+<header>
+  <div class="brand">
+    <div class="logo">
+      <img src="nova.jpg" alt="Logo NOVACOM">
+    </div>
+    <div>
+      <h1 style="color:var(--blue)">NOVACOM ENTREPRISE</h1>
+      <div style="color:var(--muted)">Agence de communication globale</div>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#services">Nos services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ACCUEIL -->
+<section id="accueil" class="hero">
+
+  <div>
+    <div class="card">
+      <h2 style="color:var(--blue)">Qui sommes-nous ?</h2>
+      <p>
+        <strong>NOVACOM ENTREPRISE</strong> accompagne les organisations qui souhaitent renforcer
+        leur visibilité et développer leur influence à l’échelle nationale.
+      </p>
+      <p>
+        Notre mission est simple : <strong>faire connaître, faire agir et faire évoluer</strong>
+        votre audience grâce à une communication moderne et impactante.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="color:var(--orange)">Notre promesse</h2>
+      <p>
+        Vous offrir une stratégie claire, cohérente et orientée résultats,
+        qui transforme votre image en véritable levier de croissance.
+      </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="card" id="services">
+      <h2 style="color:var(--blue)">Nos services</h2>
+
+      <div class="services">
+        <div class="card">
+          <h3 style="color:var(--blue)">1. Faire connaître</h3>
+          <ul>
+            <li>Renforcement d’image</li>
+            <li>Visibilité nationale</li>
+            <li>Développement de notoriété</li>
+            <li>Création de contenus</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color:var(--blue)">2. Faire agir & influencer</h3>
+          <ul>
+            <li>Stratégies d’engagement</li>
+            <li>Création de communautés</li>
+            <li>Relation durable</li>
+            <li>Influence ciblée</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="color:var(--blue)">3. Stratégie globale</h3>
+          <ul>
+            <li>Audit & analyse</li>
+            <li>Storytelling</li>
+            <li>Plan de communication</li>
+            <li>Suivi des actions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <aside id="contact">
+    <div class="card">
+      <h3 style="color:var(--blue)">Contact rapide</h3>
+
+      <form action="mailto:issabachir858@gmail.com" method="POST" enctype="text/plain">
+        <input name="Nom" placeholder="Nom" required style="width:100%;padding:12px;margin-top:10px">
+        <input name="Email" placeholder="Email" required style="width:100%;padding:12px;margin-top:10px">
+        <input name="Téléphone" placeholder="Téléphone" style="width:100%;padding:12px;margin-top:10px">
+
+        <button type="submit" class="btn-primary" style="margin-top:12px;width:100%">
+          Envoyer par Email
+        </button>
+      </form>
+
+      <br>
+
+      <a class="btn-primary"
+         href="https://wa.me/22780404941"
+         target="_blank"
+         style="background:#25D366;width:100%">
+        💬 WhatsApp : 80404941
+      </a>
+
+      <br><br>
+
+      <a class="btn-primary"
+         href="tel:+22780404941"
+         style="background:var(--blue);width:100%">
+        📞 Appeler maintenant
+      </a>
+    </div>
+  </aside>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © NOVACOM ENTREPRISE — Tous droits réservés  
+  <br><br>
+  <a href="https://www.facebook.com/share/1DPqAggFnx/" target="_blank"
+     style="color:var(--blue);font-weight:600">
+    🔵 Suivez-nous sur Facebook
+  </a>
+</footer>
+
+</div>
+</body>
+</html>
